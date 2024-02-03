@@ -1,6 +1,5 @@
 /////////////////////////////////////
-//////put u=your password and username
-mongorestore --uri "mongodb+srv://<username>:<password>@cluster0.mnqzvw4.mongodb.net/Inventory" --dir /home/yossr/Inventory
+
 
 ////////////[1]//////////////////////
 
@@ -96,8 +95,6 @@ db.users.aggregate([
   }
        ])
 //////////////////////////////////////////////
-//////put u=your password and username
-mongoimport --uri "mongodb+srv://<username>:<password>@cluster0.mnqzvw4.mongodb.net/library" --collection book --file /home/yossr/Downloads/books.json --jsonArray
 ////////////////////////////////////////////////////
  db.book.aggregate([
   {$unwind:"$categories"}, 
